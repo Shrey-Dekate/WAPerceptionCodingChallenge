@@ -79,8 +79,8 @@ def colorBounds(imageFrame):
     # if cv2.waitKey(0) & 0xFF == ord('q'):
     #     cv2.destroyAllWindows()
 
-    cv2.imwrite("answer.png", imageFrame)
+    cv2.imwrite("C:\\Users\\shrey\\Desktop\\answer.png", imageFrame)
     
 if __name__ == "__main__":
-    imageOrigin = getPicture("red.png")
+    imageOrigin = getPicture("C:\\Users\\shrey\\Desktop\\red.png")
     colorBounds(imageOrigin)
