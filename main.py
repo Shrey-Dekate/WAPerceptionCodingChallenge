@@ -1,3 +1,5 @@
+# Shreyanshu Dekate
+
 import cv2
 import numpy as np
 
@@ -40,7 +42,6 @@ def colorBounds(imageFrame):
                 break
             
             # used for debugging, a red rectangle would show around each detected cone
-
             # imageFrame = cv2.rectangle(imageFrame, (x, y), (x + w, y + h), (0, 0, 255), 2)
 
             if (x > 1000):
@@ -49,7 +50,6 @@ def colorBounds(imageFrame):
                 pointsLeft.append((x,y))
 
             # used for debugging
-
             # cv2.putText(imageFrame, "Red Colour: ("+str(x)+", "+str(y)+")", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255))
 
     # debug statements used to verify adding respective points was working
@@ -81,7 +81,6 @@ def colorBounds(imageFrame):
 
     cv2.imwrite("answer.png", imageFrame)
     
-
 if __name__ == "__main__":
     imageOrigin = getPicture("red.png")
     colorBounds(imageOrigin)
